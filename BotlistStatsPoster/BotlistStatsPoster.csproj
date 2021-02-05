@@ -13,6 +13,7 @@
     <PackageLicenseFile>MIT.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/230Daniel/BotlistStatsPoster</PackageProjectUrl>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
