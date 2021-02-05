@@ -11,6 +11,7 @@ https://www.nuget.org/packages/BotlistStatsPoster/
  * [discord.boats](https://discord.boats/)
  * [discordbotlist.com](https://discordbotlist.com/)
  * [botlist.space](https://botlist.space/)
+ * [discordextremelist.xyz](https://discordextremelist.xyz/)
  
 ## Usage
 
