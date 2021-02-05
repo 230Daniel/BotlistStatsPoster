@@ -1,5 +1,7 @@
 A .NET library to post a Discord bot's server count to various bot listing websites
 
+https://www.nuget.org/packages/BotlistStatsPoster/
+
 ## Supported Bot Listing Websites
 
  * [top.gg](https://top.gg/)
