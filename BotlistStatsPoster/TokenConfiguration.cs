@@ -22,5 +22,8 @@
 
         /// <summary> Your bot's <see href="https://botlist.space/">botlist.space</see> token </summary>
         public string BotlistSpace { get; set; }
+
+        /// <summary> Your bot's <see href="https://discordextremelist.xyz/">discordextremelist.xyz</see> token </summary>
+        public string DiscordExtremeList { get; set; }
     }
 }

@@ -34,6 +34,7 @@ namespace BotlistStatsPoster
             if (!string.IsNullOrEmpty(_tokenConfiguration.DiscordBoats)) tasks.Add(PostToDiscordBoatsAsync(guildCount));
             if (!string.IsNullOrEmpty(_tokenConfiguration.DiscordBotList)) tasks.Add(PostToDiscordBotListAsync(guildCount));
             if (!string.IsNullOrEmpty(_tokenConfiguration.BotlistSpace)) tasks.Add(PostToBotlistSpaceAsync(guildCount));
+            if(!string.IsNullOrEmpty(_tokenConfiguration.DiscordExtremeList)) tasks.Add(PostToDiscordExtremeListAsync(guildCount));
 
             await Task.WhenAll(tasks);
         }
@@ -120,6 +121,16 @@ namespace BotlistStatsPoster
             StringContent content = new StringContent($"{{ \"server_count\": {guildCount} }}", Encoding.UTF8, "application/json");
 
             HttpResponseMessage result = await client.PostAsync($"https://api.botlist.space/v1/bots/{_clientId}", content);
+            result.EnsureSuccessStatusCode();
+        }
+
+        private async Task PostToDiscordExtremeListAsync(int guildCount)
+        {
+            using HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(_tokenConfiguration.DiscordExtremeList);
+            StringContent content = new StringContent($"{{ \"guildCount\": {guildCount} }}", Encoding.UTF8, "application/json");
+
+            HttpResponseMessage result = await client.PostAsync($"https://api.discordextremelist.xyz/v2/bot/{_clientId}/stats", content);
             result.EnsureSuccessStatusCode();
         }
     }
