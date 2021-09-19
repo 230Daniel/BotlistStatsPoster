@@ -6,12 +6,13 @@ https://www.nuget.org/packages/BotlistStatsPoster/
 
  * [top.gg](https://top.gg/)
  * [discord.bots.gg](https://discord.bots.gg/)
- * [bosfordiscord.com](https://botsfordiscord.com/)
+ * [discords.com](https://discords.com/)
  * [bots.ondiscord.xyz](https://bots.ondiscord.xyz/)
  * [discord.boats](https://discord.boats/)
  * [discordbotlist.com](https://discordbotlist.com/)
- * [botlist.space](https://botlist.space/)
+ * [discordlist.space](https://discordlist.space/)
  * [discordextremelist.xyz](https://discordextremelist.xyz/)
+ * [voidbots.net](https://voidbots.net/)
  
 ## Usage
 
